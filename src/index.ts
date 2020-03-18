@@ -6,7 +6,7 @@ import {FreeMobile} from "./FreeMobile";
 import {Telegram} from "./Telegram";
 import {PublicImage} from "./PublicImage";
 
-export default {
+export {
     Communication,
     Configuration,
     FreeMobile,
