@@ -3,11 +3,16 @@
   "version": "1.0.1",
   "description": "Sends message by Telegram API and SMS by the free-mobile API",
   "main": "build/index.js",
+  "types": "build/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf ./build && tsc"
+    "install": "rm -rf ./build && tsc"
   },
-  "keywords": [],
+  "keywords": [
+    "Telegram",
+    "Free",
+    "API"
+  ],
   "author": {
     "name": "Baudev",
     "email": "baudev.contact@gmail.com"
