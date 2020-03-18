@@ -1,0 +1,27 @@
+{
+  "name": "telegram-free-mobile",
+  "version": "1.0.0",
+  "description": "Sends message by Telegram API and SMS by the free-mobile API",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf ./build && tsc",
+    "start": "npm run build && node build/index.js"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Baudev",
+    "email": "baudev.contact@gmail.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^13.7.1",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "@types/node-telegram-bot-api": "^0.40.2",
+    "express": "^4.17.1",
+    "freemobile-sms": "^1.2.1",
+    "node-telegram-bot-api": "^0.40.0"
+  }
+}
