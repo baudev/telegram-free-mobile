@@ -7,7 +7,7 @@ It sends the message in duplicate, using Telegram but also the Free Mobile API.
 
 Install the library
 ```
-npm install --save telegram-free-mobile
+npm install --save telegram-free
 ```
 
 ## Usage
