@@ -29,3 +29,13 @@ This code sends the picture by Telegram and a link into the Free message.
 Configuration.load("/path-to/config.json");
 Communication.sendMessageWithPicture("title", "content", "/home/user/image.png");
 ``` 
+
+### Listen for Telegram messages
+
+```typescript
+new Server(((bot, message) => {
+    console.log("Message received !")    
+}));
+```
+
+`bot` is an instance of `TelegramBot` from [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api) library.
