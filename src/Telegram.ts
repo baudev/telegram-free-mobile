@@ -5,9 +5,9 @@ import TelegramBotDefinition from "node-telegram-bot-api";
 
 export class Telegram {
 
-    private callback: (bot: any, message: TelegramBotDefinition.Message) => void;
+    private callback: (bot: TelegramBotDefinition, message: TelegramBotDefinition.Message) => void;
 
-    constructor(callback: (bot: any, message: TelegramBotDefinition.Message) => void) {
+    constructor(callback: (bot: TelegramBotDefinition, message: TelegramBotDefinition.Message) => void) {
         this.callback = callback;
     }
 

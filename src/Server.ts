@@ -8,7 +8,7 @@ import TelegramBot from "node-telegram-bot-api";
 
 export class Server {
 
-    constructor(callback: (bot: any, message: TelegramBot.Message) => void) {
+    constructor(callback: (bot: TelegramBot, message: TelegramBot.Message) => void) {
         let telegram = new Telegram(callback);
         telegram.launchTelegramServer();
         this.fileHttpServer();
