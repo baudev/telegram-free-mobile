@@ -1,0 +1,24 @@
+{
+  "telegram":  {
+    "bot_token": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "group_id": -159159519
+  },
+  "free_mobile": [
+    {
+      "user": "xxxxxxxxx",
+      "password": "xxxxxxxxxx",
+      "phoneNumber": "xxxxxxxxxxx"
+    }
+  ],
+  "files_directory": "/home/user/",
+  "server": {
+    "http_domain": "localhost",
+    "files_server_port": 8125,
+    "enable_https": false,
+    "ssl": {
+      "privateKey": "server.key",
+      "certificate": "server.crt"
+    }
+  }
+}
+
