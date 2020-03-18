@@ -10,8 +10,6 @@ Install the library
 npm install --save telegram-free-mobile
 ```
 
-Duplicate and edit the `config.json` file.
-
 ## Usage
 
 ### Send message
