@@ -1,34 +1,23 @@
 import {Configuration} from "./Configuration";
-import {PublicImage} from "./PublicImage";
 const freemobile = require('freemobile-sms');
 
 export class FreeMobile {
 
-    /**
-     * Make the calls to the Free mobile API
-     * @param content
-     */
-    private static sendSMSToEveryUsers(content: string){
-        Configuration.freeMobileCredentials.forEach((credential) => {
-            freemobile.send(content, credential);
-        });
+    private configuration: Configuration;
+
+    constructor(configuration: Configuration) {
+        this.configuration = configuration;
     }
 
     /**
      * Sends a SMS to all free mobile users
      * @param content
      */
-    public static sendMessage(content: string){
-        FreeMobile.sendSMSToEveryUsers(content);
+    public sendMessage(content: string): Promise<void[]> {
+        let promises: Array<Promise<void>> = [];
+        this.configuration.freeMobileCredentials.forEach((credential) => {
+            promises.push(freemobile.send(content, credential));
+        });
+        return Promise.all(promises);
     }
-
-    /**
-     * Sends a SMS to all free mobile users including a link to view the image
-     * @param content
-     * @param publicImage
-     */
-    public static sendMessageWithPicture(content: string, publicImage: PublicImage){
-        FreeMobile.sendMessage(content + "\n" + publicImage.getPublicUrl())
-    }
-
 }

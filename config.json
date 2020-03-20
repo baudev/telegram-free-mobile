@@ -6,19 +6,8 @@
   "free_mobile": [
     {
       "user": "xxxxxxxxx",
-      "password": "xxxxxxxxxx",
-      "phoneNumber": "xxxxxxxxxxx"
+      "password": "xxxxxxxxxx"
     }
-  ],
-  "files_directory": "/home/user/",
-  "server": {
-    "http_domain": "localhost",
-    "files_server_port": 8125,
-    "enable_https": false,
-    "ssl": {
-      "privateKey": "server.key",
-      "certificate": "server.crt"
-    }
-  }
+  ]
 }
 
