@@ -80,7 +80,7 @@ telegram.sendMessageWithPicture("Hello World!", "/home/user/image.png")
 ```typescript
 let telegram = communicationApi.telegram;
 telegram.launchTelegramServer()
-    .setOnMessageReceived((message) => {
+    .setOnMessageListener((message) => {
         console.log("Message received:", message);
     });
 ```
