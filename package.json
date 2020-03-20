@@ -1,12 +1,13 @@
 {
   "name": "telegram-free",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Sends message by Telegram API and SMS by the free-mobile API",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "rm -rf ./build && tsc"
+    "build": "rm -rf ./build && tsc",
+    "install": "npm run build"
   },
   "keywords": [
     "Telegram",
