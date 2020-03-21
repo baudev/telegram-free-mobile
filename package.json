@@ -2,8 +2,8 @@
   "name": "telegram-free",
   "version": "2.0.0",
   "description": "Sends message by Telegram API and SMS by the free-mobile API",
-  "main": "build/index.js",
-  "types": "build/index.d.ts",
+  "main": "build/TelegramFreeMobile.js",
+  "types": "build/TelegramFreeMobile.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf ./build && tsc",

@@ -3,8 +3,9 @@ import {ConfigurationInterface} from "./Interfaces/ConfigurationInterface";
 import path from "path";
 import {Telegram} from "./Telegram";
 import {FreeMobile} from "./FreeMobile";
+import {Tools} from "./Tools";
 
-export default class TelegramFreeMobile {
+class TelegramFreeMobile {
 
     private readonly _configuration: Configuration;
     private _telegram: Telegram;
@@ -31,4 +32,9 @@ export default class TelegramFreeMobile {
     get configuration(): Configuration {
         return this._configuration;
     }
+}
+
+export {
+    TelegramFreeMobile,
+    Tools
 }
