@@ -5,9 +5,7 @@
   "main": "build/TelegramFreeMobile.js",
   "types": "build/TelegramFreeMobile.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf ./build && tsc",
-    "install": "npm run build"
+    "build": "tsc"
   },
   "keywords": [
     "Telegram",
