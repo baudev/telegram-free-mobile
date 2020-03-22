@@ -116,6 +116,11 @@ Returns an instance of `Configuration`.
 + content - (_string_) Message to be sent.
 + picture - (_string_) Absolute path or public URL of the picture to be sent.
 
+**sendMessageWithVideo(content, video): Promise<TelegramBotDefinition.Message>**
+
++ content - (_string_) Message to be sent.
++ video - (_string_) Absolute path or public URL of the video to be sent.
+
 **launchTelegramServer(): Telegram**
 
 Launches the telegram bot server. Required to use listeners.

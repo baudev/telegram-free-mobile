@@ -41,6 +41,16 @@ export class Telegram {
     }
 
     /**
+     * Sends a message including a video.
+     * @param content
+     * @param video
+     */
+    public sendMessageWithVideo(content: string, video: string): Promise<TelegramBotDefinition.Message> {
+        // @ts-ignore parse_mode is allowed
+        return this.bot.sendVideo(this.configuration.telegramCredentials.group_id, video, {caption: content, parse_mode:"Markdown"})
+    }
+
+    /**
      * Launches a Telegram server to handle user interactions (such as commands for example).
      */
     public launchTelegramServer(): Telegram {
