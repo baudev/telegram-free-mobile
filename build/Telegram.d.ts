@@ -21,6 +21,12 @@ export declare class Telegram {
      */
     sendMessageWithPicture(content: string, picture: string): Promise<TelegramBotDefinition.Message>;
     /**
+     * Sends a message including a video.
+     * @param content
+     * @param video
+     */
+    sendMessageWithVideo(content: string, video: string): Promise<TelegramBotDefinition.Message>;
+    /**
      * Launches a Telegram server to handle user interactions (such as commands for example).
      */
     launchTelegramServer(): Telegram;

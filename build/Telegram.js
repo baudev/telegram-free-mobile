@@ -32,6 +32,15 @@ class Telegram {
         return this.bot.sendPhoto(this.configuration.telegramCredentials.group_id, picture, { caption: content, parse_mode: "Markdown" });
     }
     /**
+     * Sends a message including a video.
+     * @param content
+     * @param video
+     */
+    sendMessageWithVideo(content, video) {
+        // @ts-ignore parse_mode is allowed
+        return this.bot.sendVideo(this.configuration.telegramCredentials.group_id, video, { caption: content, parse_mode: "Markdown" });
+    }
+    /**
      * Launches a Telegram server to handle user interactions (such as commands for example).
      */
     launchTelegramServer() {
