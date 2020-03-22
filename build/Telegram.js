@@ -28,7 +28,8 @@ class Telegram {
      * @param picture
      */
     sendMessageWithPicture(content, picture) {
-        return this.bot.sendPhoto(this.configuration.telegramCredentials.group_id, picture, { caption: content });
+        // @ts-ignore parse_mode is allowed
+        return this.bot.sendPhoto(this.configuration.telegramCredentials.group_id, picture, { caption: content, parse_mode: "Markdown" });
     }
     /**
      * Launches a Telegram server to handle user interactions (such as commands for example).

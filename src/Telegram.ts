@@ -36,7 +36,8 @@ export class Telegram {
      * @param picture
      */
     public sendMessageWithPicture(content: string, picture: string): Promise<TelegramBotDefinition.Message>{
-        return this.bot.sendPhoto(this.configuration.telegramCredentials.group_id, picture, {caption: content});
+        // @ts-ignore parse_mode is allowed
+        return this.bot.sendPhoto(this.configuration.telegramCredentials.group_id, picture, {caption: content, parse_mode:"Markdown"});
     }
 
     /**
